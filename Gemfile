@@ -4,6 +4,8 @@ ruby '2.0.0'
 gem 'mysql2'
 gem 'nokogiri'
 gem 'pry'
+gem "gmaps4rails"
+gem "geocoder"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

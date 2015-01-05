@@ -1,4 +1,12 @@
-FutsalApp::Application.routes.draw do
+ FutsalApp::Application.routes.draw do
+	root  'static_pages#home'
+  match '/place',    to: 'static_pages#place',    via: 'get'
+  match '/about',   to: 'static_pages#about',   via: 'get'
+  match '/contact', to: 'static_pages#contact', via: 'get'  
+	match '/news', to: 'static_pages#news', via: 'get'
+	match '/ochiai', to: 'static_pages#ochiai', via: 'get'
+	match '/toshimaen', to: 'static_pages#toshimaen', via: 'get'
+	match '/nerima', to: 'static_pages#nerima', via: 'get' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

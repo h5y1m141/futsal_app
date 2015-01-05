@@ -23,3 +23,23 @@ production:
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+
+#db:
+#  development:
+#    adapter: mysql2
+#    encoding: utf8
+#    database: footsal_db_development
+#    pool: 5
+#    username: root
+#    password: ooooo58 
+#    host: localhost
+#
+#  production:
+#    adapter: mysql2
+#    encoding: utf8
+#    database: footsal_db_production
+#    pool: 5
+#    username: root
+#    password: ooooo58
+#    host: localhost
+#

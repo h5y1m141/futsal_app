@@ -1,0 +1,16 @@
+<h1>練馬コート情報</h1>
+<div class="center hero-unit">
+<table class="table table-striped">
+<thead>
+  <th width="20%">イベント名称</th>
+  <th width="20%">日時</th>
+  <th width="20%">募集人数</th>
+  <th width="20%">残り</th>
+</thead>
+<tbody>
+<% @detail.zip(@date,@title,@url).each do |item,day,title,url| %>
+	<tr><td><a href='<%= url %>'><%= title %></a></td><td><%= day %></td><td><%= item[0] %></td><td><%= item[1] %></td></tr>
+<% end %>
+</tbody>
+</table>
+</div>

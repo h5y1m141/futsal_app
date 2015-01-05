@@ -49,6 +49,8 @@ GEM
     erubis (2.7.0)
     execjs (2.2.2)
     ffi (1.9.6)
+    geocoder (1.2.6)
+    gmaps4rails (2.1.2)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (1.0.2)
@@ -158,6 +160,8 @@ DEPENDENCIES
   bootstrap-sass (= 2.3.2.0)
   capybara (= 2.1.0)
   coffee-rails (= 4.0.1)
+  geocoder
+  gmaps4rails
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
   mysql2
