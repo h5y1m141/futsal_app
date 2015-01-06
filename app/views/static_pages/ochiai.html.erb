@@ -8,8 +8,13 @@
   <th width="20%">残り</th>
 </thead>
 <tbody>
-<% @detail.zip(@date,@title,@url).each do |item,day,title,url| %>
-	<tr><td><a href='<%= url %>'><%= title %></a></td><td><%= day %></td><td><%= item[0] %></td><td><%= item[1] %></td></tr>
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.start_date %></td>
+    <td><%= event.participants %></td>
+    <td><%= event.unoccupied_seats %></td>
+  </tr>
 <% end %>
 </tbody>
 </table>
