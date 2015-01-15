@@ -1,0 +1,21 @@
+<h2>フットサルコート一覧</h2>
+<div class="container-fluid">
+  <table class="table table-striped">
+    <tbody>
+      <% @places.each do |place| %>
+        <tr>
+          <td width="60%">
+            <%= place.name %>
+          </td>
+          <td>
+            <%= link_to '<button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-info-sign"></i>　表示</button>'.html_safe, edit_place_path(place) %> 
+            <%= link_to '<button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-remove-sign"></i>　削除</button>'.html_safe, edit_place_path(place), method: :delete, data: { confirm: '本当に削除しますか' } %> 
+                    </button>
+
+          </td>
+
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
