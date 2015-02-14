@@ -1,0 +1,21 @@
+defaults: &defaults
+  adapter: mysql2
+  encoding: utf8
+  charset: utf8
+  pool: 5
+  username: YOURNAME
+  password: PASSWORD
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *defaults
+  database: futsal_court_development
+
+test:
+  <<: *defaults
+  database: futsal_court_test
+
+production:
+  <<: *defaults
+  host: production_db_host
+  database: futsal_court_production
