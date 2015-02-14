@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20150106234555) do
     t.datetime "updated_at"
   end
 
-  add_index "events", ["permalink"], name: "index_events_on_permalink"
+  add_index "events", ["permalink"], name: "index_events_on_permalink", using: :btree
 
   create_table "maps", force: true do |t|
     t.string   "title"
